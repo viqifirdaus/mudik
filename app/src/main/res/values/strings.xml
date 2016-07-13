@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">MudikApp</string>
+    <string name="app_desc">Setia Menemanimu Mudik</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="compass_dial">Compass Dial</string>
+    <string name="compass_hands">Compass Hands</string>
+    <string-array name="place_array">
+        <item>Surabaya</item>
+        <item>Semarang</item>
+        <item>Jakarta</item>
+        <item>Bandung</item>
+        <item>Banten</item>
+        <item>Medan</item>
+        <item>Samarinda</item>
+    </string-array>
+
+</resources>

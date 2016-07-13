@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:layout_marginTop="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layer1">
+
+        <TextView
+            android:id="@+id/medialist_label_nama"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="6dp"
+            android:layout_gravity="left"
+            android:text="Contoh Video"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <VideoView
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:id="@+id/video"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

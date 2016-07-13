@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="6dp"
+    android:background="@drawable/layer1"
+    android:layout_marginTop="8dp">
+
+    <ImageView
+        android:id="@+id/buttonlist_img_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_home" />
+
+    <!-- Button dua-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:padding="4dp"
+       >
+
+
+        <TextView
+            android:id="@+id/buttonlist_label_nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_gravity="left"
+            android:text="ATM Mandiri"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/buttonlist_label_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="6dp"
+            android:text="Berjarak 1.084 km dari tempat anda"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceSmall"
+            />
+    </LinearLayout>
+
+</LinearLayout>

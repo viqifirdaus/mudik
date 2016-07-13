@@ -1,0 +1,58 @@
+<ScrollView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView2"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp"
+        android:layout_marginTop="8dp">
+
+
+            <TextView
+                android:id="@+id/buttonlist_label_nama"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="6dp"
+                android:text="About Us"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="1"/>
+
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/crew"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:src="@drawable/about_img"/>
+
+            <TextView
+                android:id="@+id/library"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_gravity="left"
+                android:text="Library dan API: \n 1.http://api.aladhan.com/ \n 2.it.neokree.com \n 3.Webservice Volley"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/fitur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_gravity="left"
+                android:text="\n\nFITUR: \n 1.Location (GPS) \n 2.Web Service \n 3.Media (Audio dan Video)\n 4.Sensor (Accelero dan Magnetic)\n 5.Internet dan Network \n 6.UI/UX "
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@color/colorPrimary"
+                android:layout_weight="1"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>
