@@ -30,9 +30,9 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
 
         @Override
         public int compare(Place lhs, Place rhs) {
-            String str1 = lhs.p_detail;
-            String str2 = rhs.p_detail;
-            return str1.compareToIgnoreCase(str2);
+            Double var1 = lhs.p_detail;
+            Double var2 = rhs.p_detail;
+            return var1.compareTo(var2);
         }
 
         @Override
@@ -82,7 +82,7 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
             ImageView iconview = (ImageView) view.findViewById(R.id.buttonlist_img_icon);
 
             pNama.setText(data.p_name);
-            pDetail.setText(data.p_detail);
+            pDetail.setText(data.p_detail+" km dari tempat anda");
             iconview.setImageResource(data.img);
             Collections.sort(placeList,StringAscComparator);
 

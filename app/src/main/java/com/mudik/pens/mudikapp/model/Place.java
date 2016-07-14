@@ -11,9 +11,10 @@ import java.util.ListIterator;
  * Created by Rimawanti Fauzyah on 5/19/2016.
  */
 public class Place {
-    public String p_name, p_detail;
+    public String p_name;
+    public Double p_detail;
     public int img;
-    public Place(String nama, String detil, int gambar){
+    public Place(String nama, double detil, int gambar){
         this.p_name = nama;
         this.p_detail= detil;
         this.img = gambar;
