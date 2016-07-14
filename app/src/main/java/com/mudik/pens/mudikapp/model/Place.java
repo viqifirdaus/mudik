@@ -1,5 +1,12 @@
 package com.mudik.pens.mudikapp.model;
 
+import android.support.annotation.NonNull;
+
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.List;
+import java.util.ListIterator;
+
 /**
  * Created by Rimawanti Fauzyah on 5/19/2016.
  */
@@ -11,5 +18,6 @@ public class Place {
         this.p_detail= detil;
         this.img = gambar;
     }
+
 
 }

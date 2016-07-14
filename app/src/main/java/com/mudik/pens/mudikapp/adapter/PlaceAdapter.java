@@ -13,17 +13,33 @@ import com.mudik.pens.mudikapp.fragment.InfoFragment;
 import com.mudik.pens.mudikapp.model.Media;
 import com.mudik.pens.mudikapp.model.Place;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
  * Created by Rimawanti Fauzyah on 5/18/2016.
  */
 public class PlaceAdapter extends ArrayAdapter<Place> {
-    private List<Place> placeList = null;
+    private static List<Place> placeList = null;
     private List<Media> mediaList = null;
     private Context context;
    // private PackageManager packageManager;
 
+    public static Comparator<Place> StringAscComparator = new Comparator<Place>() {
+
+        @Override
+        public int compare(Place lhs, Place rhs) {
+            String str1 = lhs.p_detail;
+            String str2 = rhs.p_detail;
+            return str1.compareToIgnoreCase(str2);
+        }
+
+        @Override
+        public boolean equals(Object object) {
+            return false;
+        }
+    };
     public PlaceAdapter(Context context, int textViewResourceId,
                         List<Place> placeList) {
         super(context, textViewResourceId, placeList);
@@ -68,18 +84,10 @@ public class PlaceAdapter extends ArrayAdapter<Place> {
             pNama.setText(data.p_name);
             pDetail.setText(data.p_detail);
             iconview.setImageResource(data.img);
+            Collections.sort(placeList,StringAscComparator);
 
         }
-       /* if (null != data1) {
-            TextView pNama = (TextView) view.findViewById(R.id.buttonlist_label_nama);
-            TextView pDetail = (TextView) view.findViewById(R.id.buttonlist_label_detail);
-            ImageView iconview = (ImageView) view.findViewById(R.id.buttonlist_img_icon);
 
-            pNama.setText(data.p_name);
-            pDetail.setText(data.p_detail);
-            iconview.setImageResource(data.img);
-
-        }*/
         return view;
     }
 }

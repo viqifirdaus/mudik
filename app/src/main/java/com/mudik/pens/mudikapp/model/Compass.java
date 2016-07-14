@@ -131,8 +131,8 @@ public class Compass implements SensorEventListener{
                 SensorManager.getOrientation(R, orientation);
                 // Log.d(TAG, "azimuth (rad): " + azimuth);
                 azimuth = (float) Math.toDegrees(orientation[0]); // orientation
-                azimuth = (azimuth + 270) % 270;
-                // Log.d(TAG, "azimuth (deg): " + azimuth);
+                azimuth = ((azimuth + 360 + 40.25f) % 360);
+                Log.d(TAG, "azimuth (degree): " + azimuth);
                 adjustArrow();
             }
         }

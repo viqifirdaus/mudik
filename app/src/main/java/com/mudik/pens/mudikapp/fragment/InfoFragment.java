@@ -17,6 +17,8 @@ import com.mudik.pens.mudikapp.adapter.PlaceAdapter;
 import com.mudik.pens.mudikapp.model.Place;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -47,16 +49,20 @@ public class InfoFragment extends android.support.v4.app.Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+
         //list place CONTOH
         listPlace = new ArrayList<>();
         listPlace.add(new Place("ATM Mandiri","1.084 km dari tempat anda",R.drawable.ic_home));
         listPlace.add(new Place("ATM BNI SYARIAH","1.085 km dari tempat anda",R.drawable.ic_home));
-        listPlace.add(new Place("ATM Bank Danamon","1.084 km dari tempat anda",R.drawable.ic_home));
+        listPlace.add(new Place("ATM Bank Danamon","1.081 km dari tempat anda",R.drawable.ic_home));
+
 
         ListView l = (ListView) view.findViewById(R.id.placelistView);
         listAdaptorPlace = new PlaceAdapter(getActivity(),
                 R.layout.place_list_view, listPlace);
         l.setAdapter(listAdaptorPlace);
+
+       /* Collections.sort(listPlace, StringAscComparator);*/
 
 
         //kategori

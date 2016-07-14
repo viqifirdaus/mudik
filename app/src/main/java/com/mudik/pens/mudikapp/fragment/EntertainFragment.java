@@ -25,9 +25,6 @@ public class EntertainFragment extends android.support.v4.app.Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View vResult    = inflater.inflate(R.layout.entertain_fragment, container, false);
-       /* TextView text = new TextView(container.getContext());
-        text.setText("Fragment content");
-        text.setGravity(Gravity.CENTER);*/
 
         return  vResult;
     }
@@ -37,9 +34,9 @@ public class EntertainFragment extends android.support.v4.app.Fragment {
         super.onViewCreated(view, savedInstanceState);
         //list place CONTOH
         listMedia = new ArrayList<>();
-        listMedia.add(new Media("Video 1","https://www.youtube.com/watch?v=LYpmybdzBmk"));
-        listMedia.add(new Media("Video 2","https://www.youtube.com/watch?v=LYpmybdzBmk"));
-        listMedia.add(new Media("Video 3","https://www.youtube.com/watch?v=LYpmybdzBmk"));
+        listMedia.add(new Media("Video 1","https:/www.carlyshare.com/mudik/assets/tmp/Wtf is going on -9GAG.mp4"));
+        /*listMedia.add(new Media("Video 2","https://www.youtube.com/watch?v=LYpmybdzBmk"));
+        listMedia.add(new Media("Video 3","https://www.youtube.com/watch?v=LYpmybdzBmk"));*/
 
         ListView m = (ListView) view.findViewById(R.id.medialistView);
         listAdaptorMedia = new MediaAdapter(getActivity(),
